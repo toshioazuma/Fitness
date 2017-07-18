@@ -1,0 +1,210 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.onrushers.app.event.ticket.EventTicketActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/event_ticket_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_space"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/default_double_space">
+
+            <RelativeLayout
+                android:id="@+id/event_ticket_title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/event_ticket_avatar_imageview"
+                    android:layout_width="@dimen/event_avatar_picture_height"
+                    android:layout_height="@dimen/event_avatar_picture_height"
+                    android:layout_marginRight="@dimen/default_space"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user_avatar_default"
+                    app:civ_border_width="0dp"/>
+
+                <TextView
+                    android:id="@+id/event_ticket_title_textview"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/event_ticket_avatar_imageview"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darkGray"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/event_ticket_subtitle_textview"
+                    fontPath="fonts/EurostileOblique.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/event_ticket_title_textview"
+                    android:layout_marginTop="@dimen/default_half_space"
+                    android:layout_toRightOf="@id/event_ticket_avatar_imageview"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darkGray"
+                    android:textSize="13sp"/>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_ticket_avatar_imageview"
+                    android:layout_marginTop="@dimen/default_space">
+
+                    <ImageView
+                        android:id="@+id/event_ticket_place_imageview"
+                        android:layout_width="@dimen/event_avatar_picture_height"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_ticket_place"/>
+
+                    <ImageView
+                        android:id="@+id/event_ticket_price_imageview"
+                        android:layout_width="@dimen/event_avatar_picture_height"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_ticket_price"
+                        app:layout_marginLeftPercent="50%"/>
+
+                    <TextView
+                        android:id="@+id/event_ticket_place_textview"
+                        fontPath="fonts/MontserratRegular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_marginLeft="@dimen/event_avatar_picture_height"
+                        android:gravity="center_vertical"
+                        android:text="@string/lorem_ipsum"
+                        android:textSize="12sp"
+                        app:layout_marginRightPercent="50%"/>
+
+                    <TextView
+                        android:id="@+id/event_ticket_price_textview"
+                        fontPath="fonts/MontserratRegular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/event_ticket_price_imageview"
+                        android:gravity="center_vertical"
+                        android:text="@string/lorem_ipsum"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/event_ticket_date_imageview"
+                        android:layout_width="@dimen/event_avatar_picture_height"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_marginTop="@dimen/event_avatar_picture_height"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_ticket_date"/>
+
+                    <ImageView
+                        android:id="@+id/event_ticket_time_imageview"
+                        android:layout_width="@dimen/event_avatar_picture_height"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_marginTop="@dimen/event_avatar_picture_height"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_ticket_time"
+                        app:layout_marginLeftPercent="50%"/>
+
+                    <TextView
+                        android:id="@+id/event_ticket_date_textview"
+                        fontPath="fonts/MontserratRegular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_marginLeft="@dimen/event_avatar_picture_height"
+                        android:layout_marginTop="@dimen/event_avatar_picture_height"
+                        android:gravity="center_vertical"
+                        android:text="@string/lorem_ipsum"
+                        android:textSize="12sp"
+                        app:layout_marginRightPercent="50%"/>
+
+                    <TextView
+                        android:id="@+id/event_ticket_time_textview"
+                        fontPath="fonts/MontserratRegular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/event_avatar_picture_height"
+                        android:layout_toRightOf="@id/event_ticket_price_imageview"
+                        android:gravity="center_vertical"
+                        android:text="@string/lorem_ipsum"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/event_ticket_location_imageview"
+                        android:layout_width="@dimen/event_avatar_picture_height"
+                        android:layout_height="@dimen/event_avatar_picture_height"
+                        android:layout_marginTop="80dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_ticket_location"/>
+
+                    <TextView
+                        android:id="@+id/event_ticket_location_textview"
+                        fontPath="fonts/MontserratRegular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="80dp"
+                        android:layout_toRightOf="@id/event_ticket_location_imageview"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/event_avatar_picture_height"
+                        android:text="@string/lorem_ipsum"
+                        android:textSize="12sp"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_lg_qr_code"/>
+
+            <ImageView
+                android:id="@+id/event_ticket_qrcode_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingBottom="@dimen/default_space"
+    android:paddingLeft="@dimen/default_double_space"
+    android:paddingTop="@dimen/default_space"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/feed_tag_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/default_space"
+        android:src="@drawable/ic_tag_outline"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feed_tag_users_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/feed_tag_imageview"/>
+
+</RelativeLayout>

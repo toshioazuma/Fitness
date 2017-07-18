@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.onrushers.app.settings.social_account.SocialAccountFragment"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_double_space">
+
+        <ImageView
+            android:id="@+id/social_account_facebook_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_social_facebook"/>
+
+        <ToggleButton
+            android:id="@+id/social_account_facebook_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sel_toggle_social"
+            android:checked="false"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text=""
+            android:textOff=""
+            android:textOn=""/>
+
+        <TextView
+            android:id="@+id/social_account_facebook_label"
+            fontPath="fonts/MontserratRegular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/default_space"
+            android:layout_marginRight="@dimen/default_space"
+            android:layout_toLeftOf="@id/social_account_facebook_toggle_button"
+            android:layout_toRightOf="@id/social_account_facebook_icon"
+            android:gravity="center_vertical"
+            android:text="@string/social_account.link_facebook"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/social_account_facebook_username_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/social_account_facebook_label"
+            android:layout_alignRight="@id/social_account_facebook_label"
+            android:layout_below="@id/social_account_facebook_label"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

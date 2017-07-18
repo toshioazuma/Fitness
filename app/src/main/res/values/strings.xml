@@ -1,0 +1,396 @@
+<resources>
+    <!-- general -->
+    <string name="app_name">OnRushers</string>
+    <string name="app_website_url">http://www.onrushers.com</string>
+    <string name="app_cgu">http://www.onrushers.com/cgu</string>
+
+    <!-- app support -->
+    <string name="support_email">support@onrushers.com</string>
+    <string name="support_subject">OnRushers - Contact</string>
+    <!-- // end of app support -->
+
+    <!-- // end of general -->
+
+    <!-- beta -->
+    <string name="feature_coming_soon">Fonctionnalité à venir</string>
+
+    <string name="explore.photos.coming_soon">Photos à venir</string>
+    <string name="explore.ranking.coming_soon">Classement à venir</string>
+    <!-- // end of beta -->
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">1031545716915167</string>
+    <!-- // end of Facebook -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- network -->
+    <string name="connectivity.missing">Pas de connectivité</string>
+    <!-- // end of network -->
+
+    <!-- sample texts -->
+    <string name="empty"></string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+
+    <string name="sample.username">NoiseControllers</string>
+    <string name="sample.grade">Spartiate</string>
+    <string name="sample.description">Enjoy life before it enjoys you.\nCarpe Diem. xx</string>
+    <!-- // end of sample texts -->
+
+    <string name="action.ok">OK</string>
+    <string name="action.yes">Oui</string>
+    <string name="action.no">Non</string>
+    <string name="action.back">Retour</string>
+    <string name="action.cancel">Annuler</string>
+    <string name="action.finished">Terminé</string>
+    <string name="action.report">Signaler</string>
+    <string name="action.validate">Valider</string>
+    <string name="action.add">Ajouter</string>
+    <string name="action.added">Ajouté</string>
+    <string name="action.delete">Supprimer</string>
+    <string name="action.next">Suivant</string>
+
+    <string name="action.follow">Suivre</string>
+    <string name="action.following">Suivi</string>
+    <string name="action.unfollow">Ne plus suivre</string>
+    <string name="action.skip">Passer</string>
+
+    <string name="dialog.loading.title">Chargement</string>
+    <string name="dialog.loading.message">Veuillez patientez...</string>
+
+    <!-- launch -->
+    <string name="launch_screen">Launch screen</string>
+
+    <string name="launch_login_facebook">Se connecter avec Facebook</string>
+    <string name="launch_login_email">Se connecter</string>
+    <string name="launch_sign_in">Pas encore de compte</string>
+
+    <string name="launch.error.login_unknown_occured">Une erreur s\'est produite</string>
+    <!-- // end of launch -->
+
+    <!-- sign in -->
+    <string name="sign_in.title">Inscription</string>
+
+    <string name="sign_in.fields.username">Pseudonyme</string>
+    <string name="sign_in.fields.lastname">Nom</string>
+    <string name="sign_in.fields.firstname">Prénom</string>
+    <string name="sign_in.fields.email">Adresse e-mail</string>
+    <string name="sign_in.fields.password">Mot de passe</string>
+    <string name="sign_in.fields.confirm_password">Confirmation mot de passe</string>
+    <string name="sign_in.fields.birthdate">Date de naissance</string>
+    <string name="sign_in.fields.gender">Genre</string>
+    <string name="sign_in.fields.units">Unité</string>
+    <string name="sign_in.fields.sponsor">Pseudo parrain</string>
+
+    <string name="sign_in.gender.female">Femme</string>
+    <string name="sign_in.gender.male">Homme</string>
+
+    <string name="sign_in.unit.metric">Métrique (Kg, m)</string>
+    <string name="sign_in.unit.imperial">Impérial (Lbs, ft)</string>
+
+    <string name="sign_in.messages.required_fields">* Champs obligatoires</string>
+    <string name="sign_in.messages.terms">En donnant vos informations et en continuant, vous acceptez les Conditions d\'utilisation de ONRUSHERS.</string>
+    <string name="sign_in.messages.terms.terms_word">Conditions d\'utilisation</string>
+
+    <string name="sign_in.messages.username_not_available">Ce pseudo est déjà utilisé</string>
+    <string name="sign_in.messages.invalid_birthdate">La date sélectionné doit être antérieure à aujourd\'hui</string>
+    <string name="sign_in.messages.sign_in.success">Votre compte utilisateur a été créé avec succès !</string>
+    <string name="sign_in.actions.sign_in">Continuer</string>
+
+    <string name="sign_in.validator.required_field">Ce champ est obligatoire.</string>
+    <string name="sign_in.validator.password_min_length">Le mot de passe doit contenir au moins 6 caractères.</string>
+    <string name="sign_in.validator.doesnt_match_passwords">Les mots de passe ne correspondent pas.</string>
+    <string name="sign_in.validator.invalid_email">Adresse email invalide.</string>
+    <string name="sign_in.validator.unselected_gender">Veuillez sélectionner un genre.</string>
+    <!-- // end of sign in -->
+
+    <!-- log in -->
+    <string name="log_in.title">Connexion</string>
+
+    <string name="log_in.fields.username">Pseudonyme</string>
+    <string name="log_in.fields.password">Mot de passe</string>
+
+    <string name="log_in.actions.log_in">Connexion</string>
+    <string name="log_in.actions.forgot_password">Mot de passe oublié</string>
+
+    <string name="log_in.validator.required_fields">Pour vous connecter, veuillez remplir votre pseudonyme et mot de passe.</string>
+    <!-- // end of log in -->
+
+    <!-- reset password -->
+    <string name="reset_password.title">Mot de passe oublié</string>
+    <string name="reset_password.instruction">Entrez votre peusdo ou votre adresse mail,\nvous reverez un mail sur l’adresse liée.</string>
+
+    <string name="reset_password.sent.title_email">Un mail vous a été envoyé à l\'adresse</string>
+    <string name="reset_password.sent.title_username">Un mail vous a été envoyé au pseudonyme</string>
+
+    <string name="reset_password.failure.user_not_found">Pas d\'utilisateur trouvé avec ce pseudonyme ou adresse email !</string>
+    <!-- // end of reset password -->
+
+    <!-- post feed -->
+    <string name="action_post_feed">Nouveau post</string>
+    <string name="post_feed.fields.text">Quoi de neuf ?</string>
+
+    <string name="post_feed.actions.post">Poster</string>
+
+    <string name="post_feed.validator.text_required">Veuillez saisir un texte</string>
+
+    <string name="post_feed.messages.success">Post ajouté</string>
+    <string name="post_feed.messages.failure">Une erreur s\'est produite</string>
+    <!-- // end of post feed -->
+
+    <!-- picture picker -->
+    <string name="picker.picture.options.dismiss">Fermer</string>
+    <string name="picker.picture.options.new_picture">Nouvelle photo</string>
+    <string name="picker.picture.options.import_library">Importer depuis la bibliothèque</string>
+
+    <string name="picker.picture.library.select_picture">Sélectionner une photo</string>
+
+    <string name="picker.picture.error.cannot_use_camera">Caméra non disponible</string>
+    <string name="picker.picture.error.camera_permission_denied">L\'application OnRushers n\'est pas autoriser à prendre des photos. Veuillez autoriser l\'utilisation de la caméra dans les réglages de votre téléphone.</string>
+    <string name="picker.picture.error.cannot_use_library">Bibliothèque non disponible</string>
+
+    <string name="picker.picture.error.write_permission_denied">L\'application OnRushers n\'est pas autoriser à prendre des photos. Veuillez autoriser l\'écriture de fichier dans les réglages de votre téléphone.</string>
+    <string name="picker.picture.error.file_creation_failed">Impossible de créer de fichier image sur votre appareil.</string>
+    <string name="picker.picture.error.picture_import_failed">Impossible d\'importer la photo sélectionnée.</string>
+    <string name="picker.picture.error.unknown_error">Une erreur s\'est produite.</string>
+    <!-- // end of picture picker -->
+
+    <!-- picture cropper -->
+    <string name="cropper.picture.title">Déplacer et calibrer</string>
+    <!-- // end of picture cropper -->
+
+    <!-- place picker -->
+    <string name="place_picker.title">Ajouter un lieu</string>
+    <string name="place_picker.fields.search">Rechercher</string>
+    <!-- // end of place picker -->
+
+    <!-- menu -->
+    <string name="menu.items.home">Accueil</string>
+    <string name="menu.items.my_profile">Mon profil</string>
+    <string name="menu.items.search">Rechercher</string>
+
+    <string name="menu.items.notifications">Notifications</string>
+    <string name="menu.items.feeds">Feeds</string>
+    <string name="menu.items.explore">Explorer</string>
+    <string name="menu.items.events">Événements</string>
+    <string name="menu.items.settings">Réglages</string>
+    <string name="menu.items.log_out">Déconnexion</string>
+    <!-- // end of menu -->
+
+    <!-- log out -->
+    <string name="log_out.confirm.title">Déconnexion</string>
+    <string name="log_out.confirm.message">Souhaitez-vous vous déconnecter ?</string>
+    <!-- // end of log out -->
+
+    <!-- events -->
+    <string name="events.tab.future.title">Events à venir</string>
+    <string name="events.tab.mine.title">Mes events</string>
+
+    <string name="future_events.no_data.title">Aucun événement</string>
+    <string name="future_events.no_data.message">Pas d\'événement pour le moment</string>
+
+    <string name="my_events.no_data.title">Aucune inscription</string>
+    <string name="my_events.no_data.message">Inscrivez vous à un event,\nle billet et la description seront\ndisponible dans cet onglet</string>
+    <!-- // events -->
+
+    <!-- feed -->
+    <string name="feed.actions.boost">Boost</string>
+    <string name="feed.actions.comment">Commenter</string>
+    <string name="feed.actions.delete">Supprimer</string>
+
+    <string name="feed.messages.not_found">Ce post n\'existe plus</string>
+    <!-- // end of feed -->
+
+    <!-- feed footer -->
+    <string name="footer_feed.actions.add_comment">Ajouter un commentaire</string>
+    <string name="footer_feed.actions.rush">Rush</string>
+    <string name="footer_feed.actions.undo_rush">Rushed</string>
+    <!-- // end of feed footer -->
+
+    <!-- feed comment -->
+    <string name="comment_feed.title">Commenter</string>
+    <string name="comment_feed.actions.publish">Publier</string>
+    <string name="comment_feed.actions.delete">Supprimer</string>
+    <!-- // end of feed comment -->
+
+    <!-- feed boost -->
+    <string name="boost_feed_list.title">Supporters</string>
+    <!-- // end of feed boost -->
+
+    <!-- feed register -->
+    <string name="feed_register.welcome.text">Vient de rejoindre la communauté !</string>
+    <!-- // end of feed register -->
+
+    <!-- feed post (in case of change picture -->
+    <string name="feed_post.change_profile_picture.text">%1$s vient de changer sa photo de profil</string>
+    <string name="feed_post.change_cover_picture.text">%1$s vient de changer sa photo de couverture</string>
+    <!-- // end of feed post (in case of change picture -->
+
+    <!-- feed avatar change -->
+    <string name="feed_avatar_change.text">Vient de changer sa photo de profil</string>
+    <!-- // end of feed avatar change -->
+
+    <!-- feed hero suggestion -->
+    <string name="feed_hero_suggestion.text">Vous ai suggéré comme Héro</string>
+    <!-- // end of feed hero suggestion -->
+
+    <!-- feed detail -->
+    <string name="feed_detail.comment.hint">Quelque chose à dire ?</string>
+
+    <string name="feed_detail.comment.deleted">Le commentaire a été supprimé</string>
+    <string name="feed_detail.comment.error.on_delete">Le commentaire n\'a pas été supprimé</string>
+    <!-- // end of feed detail -->
+
+    <!-- home -->
+    <!-- // end of home -->
+
+    <!-- search -->
+    <string name="search.fields.search">Rechercher</string>
+    <!-- // end of search -->
+
+    <!-- user profile -->
+    <string name="user_profile_edit_here">Editer votre profil ici</string>
+
+    <plurals name="user_profile_hero_count">
+        <item quantity="zero">%1$d HERO</item>
+        <item quantity="one">%1$d HERO</item>
+        <item quantity="other">%1$d HEROS</item>
+    </plurals>
+    <plurals name="user_profile_fan_count">
+        <item quantity="zero">%1$d FAN</item>
+        <item quantity="one">%1$d FAN</item>
+        <item quantity="other">%1$s FANS</item>
+    </plurals>
+    <!-- // end of user profile -->
+
+    <!-- other user profile -->
+    <string name="other_user.become_fan">Devenir fan</string>
+    <string name="other_user.undo_become_fan">Ne plus être fan</string>
+    <!-- // end of other user profile -->
+
+    <!-- fans -->
+    <string name="fans.title">Fans</string>
+    <!-- // end of fans -->
+
+    <!-- heros -->
+    <string name="heros.title">Héros</string>
+    <!-- // end of heros -->
+
+    <!-- settings -->
+    <string name="settings.edit_my_account">Editer mon compte</string>
+    <string name="settings.social_networks">Réseaux sociaux</string>
+    <string name="settings.replay_presentation">Rejouer la présentation</string>
+    <string name="settings.support">Assistance</string>
+    <string name="settings.website">ONRUSHERS.com</string>
+    <string name="settings.delete_my_account">Supprimer mon compte</string>
+    <!-- // end of settings -->
+
+    <!-- edit my account -->
+    <string name="edit_account.fields.last_name">Nom</string>
+    <string name="edit_account.fields.first_name">Prénom</string>
+    <string name="edit_account.fields.location">Location</string>
+    <string name="edit_account.fields.email">Mail</string>
+    <string name="edit_account.fields.phone">Phone</string>
+    <string name="edit_account.fields.website">Website</string>
+    <string name="edit_account.fields.gender">Genre</string>
+    <string name="edit_account.fields.unit">Unité</string>
+    <!-- // end of edit my account -->
+
+    <!-- social account -->
+    <string name="social_account.link_facebook">Lier mon compte Facebook</string>
+    <string name="social_account.logged_in_as_facebook">Connecté en tant que %1$s</string>
+    <!-- // end of social account -->
+
+    <!-- user edit -->
+    <string name="user_edit.action.edit_cover_picture">Changer la photo de couverture</string>
+    <string name="user_edit.hint.username">Nom utilisateur</string>
+    <string name="user_edit.hint.description">Description</string>
+
+    <string name="user_edit.messages.user_info_update_successful">Vos informations ont été mises à jour</string>
+
+    <!-- // end of user edit -->
+
+    <!-- user picker -->
+    <string name="user_picker.title">Sélection</string>
+    <string name="user_picker.search.hint">Recherche un partenaire</string>
+    <!-- // end of user picker -->
+
+    <!-- report -->
+    <string name="report.sent">Le rapport de signalement a été envoyé</string>
+    <string name="report.error">Une erreur s\'est produite lors de ce signalement</string>
+    <!-- // end of report -->
+
+    <!-- event -->
+    <string name="event.terms.free">GRATUIT</string>
+    <string name="event.state.full">Complet</string>
+    <string name="event.state.registration">Inscription</string>
+    <string name="event.state.registered">Afficher mon billet</string>
+    <string name="event.terms.crossfit">Crossfit</string>
+    <string name="event.terms.places_left">%1$d/%2$d</string>
+    <string name="event.terms.price_per_person">%1$d %2$s / Pers.</string>
+    <string name="event.terms.no_recommended_level">Tous niveaux</string>
+
+    <string name="event.search.no_result">Aucun résultat</string>
+
+    <string name="event_detail.your_heros_count_registered">%1$d de vos héros sont inscrit à cet event</string>
+    <string name="event_detail.plus_count_onrushers">+ %1$d ONRUSHERS</string>
+
+    <string name="event_detail.messages.failed_to_load">Une erreur s\'est produite lors du chargement de cet évènement</string>
+
+    <string name="event_detail.date">Date : %1$s</string>
+    <string name="event_detail.places_left">Places restantes : %1$d / %2$d</string>
+    <string name="event_detail.recommended_level">Niveau conseillé : %1$s</string>
+    <string name="event_detail.public">Public : </string>
+
+    <string name="event_register.title">INSCRIPTION</string>
+    <string name="event_register.date_format">dd MMMM yyyy</string>
+    <string name="event_register.hour_format">\nHH\'H\'</string>
+    <string name="event_register.places_format">%1$d / %2$d</string>
+    <string name="event_register.places.suffix">\nplaces restantes</string>
+
+    <string name="event_register.hint.first_name">Prénom</string>
+    <string name="event_register.hint.last_name">Nom</string>
+    <string name="event_register.hint.phone">Téléphone</string>
+    <string name="event_register.hint.email">Adresse email</string>
+
+    <string name="event_register.validator.firstname_required">Veuillez saisir votre prénom</string>
+    <string name="event_register.validator.lastname_required">Veuillez saisir votre nom</string>
+    <string name="event_register.validator.phone_required">Veuillez saisir votre numéro de téléphone</string>
+    <string name="event_register.validator.email_required">Veuillez saisir votre adresse email</string>
+
+    <string name="event_register.price_place_format">%1$d%2$s x %3$s</string>
+    <plurals name="event_register_places_count">
+        <item quantity="zero">%1$d place</item>
+        <item quantity="one">%1$d place</item>
+        <item quantity="other">%1$d places</item>
+    </plurals>
+
+    <string name="event_register.price_total_format">Total : %1$d%2$s</string>
+
+    <string name="event_register.messages.failed">Un problème est survenu lors de votre inscription, veuillez réessayer ultérieurement</string>
+    <string name="event_register.messages.successful">Votre inscription a bien été prise en compte</string>
+
+    <string name="event_ticket.hour_format">HH\'H\'</string>
+    <!-- // end of event -->
+
+    <!-- explore -->
+
+    <!-- // end of explore -->
+
+    <!-- notifications -->
+    <string name="notifications.title">Notifications</string>
+    <string name="notifications.messages.empty">Pas de notification</string>
+
+    <string name="notifications.formats.comment">%1$s a commenté votre post</string>
+    <string name="notifications.formats.rush">%1$s %2$s votre post</string>
+    <string name="notifications.formats.fan">%1$s est devenu %2$s</string>
+    <string name="notifications.formats.event">%1$s vous a inscrit à l\'événement :\n%2$s</string>
+    <!-- // end of notification -->
+
+    <!-- transitions names -->
+    <string name="transitions.user_profile_picture_to_picture_fullscreen">user_profile_picture_to_picture_fullscreen</string>
+    <string name="transitions.picture_square_to_feed_detail">picture_square_to_feed_detail</string>
+    <!-- // end of transitions names -->
+
+</resources>

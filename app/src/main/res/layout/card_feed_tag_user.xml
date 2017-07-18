@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/default_space"
+    android:background="@color/transparent"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/card_feed_tag_user_imageview"
+        android:layout_width="@dimen/feed_tag_user_avatar_picture_height"
+        android:layout_height="@dimen/feed_tag_user_avatar_picture_height"
+        android:background="@color/transparent"
+        app:civ_border_color="@color/transparent"
+        app:civ_border_width="0dp"
+        tools:src="@drawable/ic_user_avatar_default"/>
+
+</android.support.v7.widget.CardView>

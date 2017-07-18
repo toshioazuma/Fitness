@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.onrushers.app.event.register.EventRegisterFragment"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/event_register_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/sh_grd_blues_header"
+            android:title="@string/event_register.title"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/event_register_date_textview"
+                    style="@style/EventRegister.TextInfo"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/event_register_places_textview"
+                    style="@style/EventRegister.TextInfo"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space"
+                android:padding="@dimen/default_space">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/event_register_avatar_imageview"
+                    android:layout_width="@dimen/event_avatar_picture_height"
+                    android:layout_height="@dimen/event_avatar_picture_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_space"
+                    android:src="@drawable/ic_user_avatar_default"
+                    app:civ_border_width="0dp"/>
+
+                <TextView
+                    android:id="@+id/event_register_title_textview"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/event_register_avatar_imageview"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_space">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/event_register_user_avatar_imageview"
+                    android:layout_width="@dimen/event_avatar_picture_height"
+                    android:layout_height="@dimen/event_avatar_picture_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user_avatar_default"
+                    app:civ_border_width="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_space"
+                    android:layout_marginRight="@dimen/default_space"
+                    android:layout_toRightOf="@id/event_register_user_avatar_imageview"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/event_register_user_username_textview"
+                        fontPath="fonts/MontserratBold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/darkGray"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/event_register_user_grade_textview"
+                        fontPath="fonts/EurostileOblique.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/user_grade_fontsize"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_space"
+                android:paddingRight="@dimen/default_space"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/event_register_user_firstname_input"
+                    style="@style/EventRegister.Input"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/default_space"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/default_space"
+                    android:drawableStart="@drawable/ic_setting_edit_account"
+                    android:hint="@string/event_register.hint.first_name"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/event_register_user_lastname_input"
+                    style="@style/EventRegister.Input"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/default_space"
+                    android:layout_weight="1"
+                    android:hint="@string/event_register.hint.last_name"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/event_register_user_phone_input"
+                style="@style/EventRegister.Input"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/default_space"
+                android:layout_marginRight="@dimen/default_space"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:drawablePadding="@dimen/default_space"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint="@string/event_register.hint.phone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="@dimen/default_space"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/event_register_user_email_input"
+                style="@style/EventRegister.Input"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/default_space"
+                android:layout_marginRight="@dimen/default_space"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:drawablePadding="@dimen/default_space"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="@string/event_register.hint.email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/default_space"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/event_register_price_place_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_double_space"
+                android:gravity="center"
+                android:textColor="@color/lightGray"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/event_register_price_total_textview"
+                fontPath="fonts/MontserratBold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:gravity="center"
+                android:textColor="@color/darkGray"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/default_space"
+                android:layout_marginTop="@dimen/default_double_space"
+                android:background="@color/green"
+                android:padding="@dimen/default_double_space">
+
+                <Button
+                    android:id="@+id/event_register_next_button"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/sh_round_green_inverse"
+                    android:elevation="2dp"
+                    android:minHeight="0dp"
+                    android:minWidth="140dp"
+                    android:paddingBottom="@dimen/default_half_space"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/default_half_space"
+                    android:stateListAnimator="@null"
+                    android:text="@string/action.next"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

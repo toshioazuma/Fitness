@@ -1,0 +1,28 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultraLightGray"
+    tools:context="com.onrushers.app.user.tabs.training.UserTabTrainingFragment"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <TextView
+            android:id="@+id/user_tab_training_rush_count_textview"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/default_space"
+            android:drawableRight="@drawable/ic_lg_rush_count"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

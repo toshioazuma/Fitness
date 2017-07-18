@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    card_view:contentPadding="@dimen/default_space">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/card_notification_context_imageview"
+            android:layout_width="@dimen/feed_avatar_picture_height"
+            android:layout_height="@dimen/feed_avatar_picture_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_user_avatar_default"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/card_notification_from_user_layout"
+            android:layout_width="@dimen/feed_avatar_picture_height"
+            android:layout_height="@dimen/feed_avatar_picture_height"
+            android:layout_alignParentLeft="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/card_notification_from_user_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_user_avatar_default"
+                card_view:civ_border_width="0dp"/>
+
+            <View
+                android:id="@+id/card_notification_type_badge_imageview"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/sh_badge_blue"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_space"
+            android:layout_marginRight="@dimen/default_space"
+            android:layout_toLeftOf="@id/card_notification_context_imageview"
+            android:layout_toRightOf="@id/card_notification_from_user_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_notification_time_ago_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/card_notification_text_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

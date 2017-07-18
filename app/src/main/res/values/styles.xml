@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoAnimationWindow" parent="AppTheme.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="elevation">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.WhiteThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="elevation">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+    </style>
+
+    <style name="Default.Toobar.Title" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Menu.Item.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/sel_menu_items</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+
+    <style name="RoundGreen.Button" parent="Widget.AppCompat.Button">
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+        <item name="android:background">@drawable/sel_btn_green</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingBottom">@dimen/default_half_space</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/default_half_space</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/sel_btn_green</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Picture.Cropper.ButtonsBar" parent="">
+        <item name="android:background">#67000000</item>
+    </style>
+
+    <style name="Picture.Cropper.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/default_space</item>
+        <item name="android:paddingRight">@dimen/default_space</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Launch.Home.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="Launch.Home.FacebookButton" parent="Launch.Home.Button">
+        <item name="android:drawablePadding">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:background">@drawable/sh_launch_facebook_btn</item>
+    </style>
+
+    <style name="Launch.SignIn.Input" parent="TextAppearance.AppCompat">
+
+    </style>
+
+    <style name="TabLayout.TabText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Events"></style>
+
+    <style name="Events.TabLayout">
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+
+    <style name="Settings"></style>
+
+    <style name="Settings.Row.TextView" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/sh_row_white_bottom_bordered</item>
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:drawablePadding">@dimen/activity_horizontal_margin</item>
+        <item name="android:drawableRight">@drawable/ic_chevron_right_black</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+
+    <style name="Settings.Row">
+        <item name="android:background">@drawable/sh_row_white_bottom_bordered</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="Settings.Label" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+
+    <style name="Settings.Input" parent="Settings.Label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="fontPath">fonts/EurostileRegular.ttf</item>
+        <item name="android:hint">@string/empty</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Settings.ToggleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:checked">true</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:text"></item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+    </style>
+
+    <style name="EditUser.Input" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_marginLeft">@dimen/default_double_space</item>
+        <item name="android:layout_marginRight">@dimen/default_double_space</item>
+        <item name="android:background">@drawable/sh_row_white_bottom_bordered</item>
+        <item name="android:paddingBottom">@dimen/default_double_space</item>
+        <item name="android:paddingTop">@dimen/default_double_space</item>
+        <item name="android:drawablePadding">@dimen/default_double_space</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="EventDetail.TextRow" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">@dimen/default_space</item>
+        <item name="android:layout_marginLeft">@dimen/default_double_space</item>
+        <item name="android:layout_marginRight">@dimen/default_double_space</item>
+    </style>
+
+    <style name="EventRegister.TextInfo" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/ultraLightGraySecondary</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+
+    <style name="EventRegister.Input" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/MontserratBold.ttf</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- fullscreen - picture -->
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+    <!-- // fullscreen - picture -->
+
+</resources>

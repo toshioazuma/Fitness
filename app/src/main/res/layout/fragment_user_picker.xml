@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.onrushers.app.user.picker.UserPickerFragment">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/user_picker_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:iconifiedByDefault="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:queryHint="@string/user_picker.search.hint"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_picker_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_picker_searchview"
+        android:background="@color/white"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+</RelativeLayout>

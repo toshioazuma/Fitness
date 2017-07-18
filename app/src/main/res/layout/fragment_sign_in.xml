@@ -1,0 +1,305 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.onrushers.app.launch.signin.SignInFragment"
+    tools:ignore="MissingPrefix">
+
+    <ScrollView
+        android:id="@+id/sign_in_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/sign_in_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingTop="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launch_logo_colored"/>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/sign_in_take_picture_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/sh_round_blue_outline"
+                    android:src="@drawable/ic_register_camera"/>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/sign_in_user_picture_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <ImageButton
+                    android:id="@+id/sign_in_delete_picture_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_register_delete_picture"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <!-- username -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_username_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_username_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.username"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // username -->
+
+            <!-- first name -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_firstname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_firsttname_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.firstname"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // first name -->
+
+            <!-- last name -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_lastname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_lastname_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.lastname"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // last name -->
+
+            <!-- email -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // email -->
+
+            <!-- password -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.password"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // password -->
+
+            <!-- confirm password -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_confirm_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_confirm_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.confirm_password"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // confirm password -->
+
+            <!-- birth date -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_birthdate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_birthdate_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/sign_in.fields.birthdate"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // birth date -->
+
+            <!-- gender & unit -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space">
+
+                <TextView
+                    android:id="@+id/sign_in_gender_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/sign_in.fields.gender"/>
+
+                <ToggleButton
+                    android:id="@+id/sign_in_gender_toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_space"
+                    android:layout_toRightOf="@id/sign_in_gender_label"
+                    android:background="@drawable/sel_toggle_gender"
+                    android:checked="true"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""/>
+
+                <TextView
+                    android:id="@+id/sign_in_unit_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/default_space"
+                    android:layout_toRightOf="@id/sign_in_gender_toggle_button"
+                    android:gravity="center_vertical"
+                    android:text="@string/sign_in.fields.units"/>
+
+                <ToggleButton
+                    android:id="@+id/sign_in_unit_toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_space"
+                    android:layout_toRightOf="@id/sign_in_unit_label"
+                    android:background="@drawable/sel_toggle_unit"
+                    android:checked="true"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""/>
+
+            </RelativeLayout>
+            <!-- // gender & unit -->
+
+            <!-- sponsor -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_sponsor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space">
+
+                <com.onrushers.common.widgets.ORTextInputEditText
+                    android:id="@+id/sign_in_sponsor_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in.fields.sponsor"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- // sponsor -->
+
+            <TextView
+                android:id="@+id/sign_in_terms_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:text="@string/sign_in.messages.terms"/>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                fontPath="fonts/MontserratBold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/green"
+                android:text="@string/sign_in.actions.sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/sign_in_action_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_arrow_back_white"
+            android:tint="@color/darkGray"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

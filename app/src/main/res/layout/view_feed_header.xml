@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_space"
+    tools:ignore="MissingPrefix">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/feed_header_avatar_imageview"
+        android:layout_width="@dimen/feed_avatar_picture_height"
+        android:layout_height="@dimen/feed_avatar_picture_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_user_avatar_default"/>
+
+    <ImageButton
+        android:id="@+id/feed_header_options_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_more_vert_black"
+        android:tint="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_space"
+        android:layout_marginRight="@dimen/default_space"
+        android:layout_toLeftOf="@id/feed_header_options_button"
+        android:layout_toRightOf="@id/feed_header_avatar_imageview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/feed_header_username_textview"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/user_username_fontsize"/>
+
+        <TextView
+            android:id="@+id/feed_header_grade_textview"
+            fontPath="fonts/EurostileOblique.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_half_space"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/user_grade_fontsize"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

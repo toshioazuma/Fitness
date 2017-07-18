@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/default_space">
+
+    <ImageView
+        android:id="@+id/notification_context_imageview"
+        android:layout_width="@dimen/notification_context_picture_height"
+        android:layout_height="@dimen/notification_context_picture_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_user_avatar_default"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/notification_from_user_layout"
+        android:layout_width="@dimen/feed_avatar_picture_height"
+        android:layout_height="@dimen/feed_avatar_picture_height"
+        android:layout_alignParentLeft="true">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/notification_from_user_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_avatar_default"
+            card_view:civ_border_width="0dp"/>
+
+        <View
+            android:id="@+id/notification_type_badge_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/sh_badge_blue"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_space"
+        android:layout_marginRight="@dimen/default_space"
+        android:layout_toLeftOf="@id/notification_context_imageview"
+        android:layout_toRightOf="@id/notification_from_user_layout"
+        android:orientation="vertical"
+        tools:ignore="MissingPrefix">
+
+        <TextView
+            android:id="@+id/notification_time_ago_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/lightGray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/notification_text_textview"
+            fontPath="fonts/MontserratRegular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/gray"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

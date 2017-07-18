@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.onrushers.app.feed.detail.FeedDetailFragment"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/feed_detail_comment_create_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageButton
+            android:id="@+id/feed_detail_add_comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/transparent"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/btn_validate"/>
+
+        <EditText
+            android:id="@+id/feed_detail_comment_input"
+            fontPath="fonts/MontserratRegular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/feed_detail_add_comment_button"
+            android:hint="@string/feed_detail.comment.hint"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feed_detail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/feed_comment_create_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="70dp"
+        app:layoutManager="LinearLayoutManager"/>
+
+</RelativeLayout>

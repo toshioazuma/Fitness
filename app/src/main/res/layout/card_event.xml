@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/event_cell_height"
+    card_view:cardCornerRadius="0dp"
+    card_view:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingPrefix">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/card_event_picture_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/card_event_picture_circleindicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_event_full_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@color/red"/>
+
+            <TextView
+                fontPath="fonts/MontserratBold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/event.state.full"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_event_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sh_vertical_black_to_clear"
+            android:padding="@dimen/default_space">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/card_event_avatar_imageview"
+                android:layout_width="@dimen/event_avatar_picture_height"
+                android:layout_height="@dimen/event_avatar_picture_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_space"
+                android:src="@drawable/ic_user_avatar_default"
+                card_view:civ_border_width="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_event_avatar_imageview"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_event_title_textview"
+                    fontPath="fonts/MontserratRegular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/card_event_subtitle_textview"
+                    fontPath="fonts/MontserratRegular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/card_event_price_ticket_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/default_space"
+            android:paddingRight="@dimen/default_space">
+
+            <TextView
+                android:id="@+id/card_event_price_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/sh_white_round_corner"
+                android:paddingBottom="@dimen/default_half_space"
+                android:paddingLeft="@dimen/default_double_space"
+                android:paddingRight="@dimen/default_double_space"
+                android:paddingTop="@dimen/default_half_space"
+                android:text="@string/event.terms.free"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/card_event_my_ticket_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:padding="@dimen/default_half_space"
+                android:src="@drawable/ic_event_my_ticket"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_event_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/card_event_price_ticket_container"
+            android:background="@color/transparent"
+            android:padding="@dimen/default_space">
+
+            <TextView
+                android:id="@+id/card_event_location_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_event_location"
+                android:drawablePadding="@dimen/default_half_space"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/card_event_date_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/card_event_location_textview"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:drawableLeft="@drawable/ic_event_calendar"
+                android:drawablePadding="@dimen/default_half_space"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/card_event_places_textview"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_event_location_textview"
+                android:layout_marginLeft="@dimen/default_space"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:layout_toRightOf="@id/card_event_date_textview"
+                android:drawableLeft="@drawable/ic_event_places"
+                android:drawablePadding="@dimen/default_half_space"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/card_event_bottom_background_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_event_bottom_layout"
+            android:background="@drawable/sh_vertical_clear_to_black"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

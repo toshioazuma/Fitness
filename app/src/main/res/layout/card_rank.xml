@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rank_row_height"
+    tools:ignore="MissingPrefix">
+
+    <com.onrushers.app.explore.tabs.ranking.views.RankPositionTextView
+        android:id="@+id/explore_rank_position_textview"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_space"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:id="@+id/explore_rank_avatar_layout"
+        android:layout_width="@dimen/feed_avatar_picture_height"
+        android:layout_height="@dimen/feed_avatar_picture_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_space"
+        android:layout_toRightOf="@id/explore_rank_position_textview">
+
+        <View
+            android:id="@+id/explore_rank_gender_view"
+            android:layout_width="@dimen/rank_gender_height"
+            android:layout_height="@dimen/rank_gender_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/explore_rank_avatar_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_avatar_default"
+            card_view:civ_border_width="0dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/explore_rank_rush_count_textview"
+        fontPath="fonts/MontserratRegular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/default_space"
+        android:layout_marginRight="@dimen/default_space"
+        android:drawablePadding="@dimen/default_half_space"
+        android:drawableRight="@drawable/ic_sm_rush_count"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkGray"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_space"
+        android:layout_toLeftOf="@id/explore_rank_rush_count_textview"
+        android:layout_toRightOf="@id/explore_rank_avatar_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/explore_rank_username_textview"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGray"/>
+
+        <TextView
+            android:id="@+id/explore_rank_grade_textview"
+            fontPath="fonts/EurostileOblique.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_half_space"
+            android:textColor="@color/blueSecondary"
+            android:textSize="@dimen/user_grade_fontsize"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

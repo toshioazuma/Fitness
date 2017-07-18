@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=4E:5A:3A:DD:B6:3E:B3:58:B1:58:39:3E:72:07:17:41:83:7B:ED:E0%3Bcom.onrushers.app.location.event
+
+    You can also add your credentials to an existing key, using this line:
+    4E:5A:3A:DD:B6:3E:B3:58:B1:58:39:3E:72:07:17:41:83:7B:ED:E0;com.onrushers.app.location.event
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBIsIdlBD3G7lmFXjg7v5mf9gg-0wXzP_o
+    </string>
+</resources>

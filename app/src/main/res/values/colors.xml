@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">#5091c5</color>
+    <color name="colorAccent">@color/blue</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black00">#00000000</color>
+    <color name="black75">#7b000000</color>
+
+    <color name="gray">#3f4041</color>
+    <color name="darkGray">#212121</color>
+
+    <color name="lightGray">#a4aeba</color>
+    <color name="lightGraySecondary">#e9ebec</color>
+
+    <color name="ultraLightGray">#f5f5f5</color>
+    <color name="ultraLightGraySecondary">#fafafa</color>
+
+    <color name="blue">#64b5f6</color>
+    <color name="blue75">#7f64b5f6</color>
+
+    <color name="blueHeaderLighter">#8BE0FE</color>
+    <color name="blueHeaderDarker">#67B8F8</color>
+
+    <color name="blueSecondary">#00aeef</color>
+    <color name="blueThird">#8cdffd</color>
+
+    <color name="blueSecondaryAlpha">#aa00aeef</color>
+
+    <color name="green">#7adbae</color>
+
+    <color name="red">#d95e63</color>
+    <color name="pink">#e67eb1</color>
+
+    <color name="blueMale">@color/blue</color>
+    <color name="pinkFemale">@color/pink</color>
+
+</resources>

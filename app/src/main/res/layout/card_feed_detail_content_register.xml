@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_double_space"
+        android:paddingRight="@dimen/default_double_space"
+        android:paddingTop="@dimen/default_double_space">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/card_feed_detail_avatar_imageview"
+            android:layout_width="@dimen/feed_register_avatar_height"
+            android:layout_height="@dimen/feed_register_avatar_height"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_avatar_default"
+            app:civ_border_width="0dp"
+            app:civ_shadow_color="@color/black75"
+            app:civ_shadow_radius="2"/>
+
+        <TextView
+            android:id="@+id/card_feed_detail_user_name_textview"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_feed_detail_avatar_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_space"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

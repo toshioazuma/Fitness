@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:contentPadding="@dimen/default_space"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/card_search_user_avatar_imageview"
+            android:layout_width="@dimen/feed_avatar_picture_height"
+            android:layout_height="@dimen/feed_avatar_picture_height"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_user_avatar_default"
+            card_view:civ_border_width="0dp"/>
+
+        <Button
+            android:id="@+id/card_search_user_add_button"
+            style="@style/RoundGreen.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="0dp"
+            android:text="@string/action.add"/>
+
+        <TextView
+            android:id="@+id/card_search_user_name_textview"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_space"
+            android:layout_marginRight="@dimen/default_space"
+            android:layout_toLeftOf="@id/card_search_user_add_button"
+            android:layout_toRightOf="@id/card_search_user_avatar_imageview"
+            android:text="@string/sample.username"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

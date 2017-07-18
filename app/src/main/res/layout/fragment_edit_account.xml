@@ -1,0 +1,131 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.onrushers.app.settings.edit_account.EditAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="false">
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.last_name"/>
+
+                <EditText
+                    android:id="@+id/edit_account_last_name_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.first_name"/>
+
+                <EditText
+                    android:id="@+id/edit_account_first_name_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.location"/>
+
+                <EditText
+                    android:id="@+id/edit_account_location_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.email"/>
+
+                <EditText
+                    android:id="@+id/edit_account_email_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.phone"/>
+
+                <EditText
+                    android:id="@+id/edit_account_phone_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.website"/>
+
+                <EditText
+                    android:id="@+id/edit_account_website_input"
+                    style="@style/Settings.Input"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.gender"/>
+
+                <!--
+                <ToggleButton
+                    android:id="@+id/edit_account_gender_toggle_button"
+                    style="@style/Settings.ToggleButton"
+                    android:background="@drawable/sel_toggle_gender_2"
+                    android:enabled="false"/>
+                -->
+
+                <ImageView
+                    android:id="@+id/edit_account_gender_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:src="@drawable/ic_gender_male"/>
+
+            </TableRow>
+
+            <TableRow style="@style/Settings.Row">
+
+                <TextView
+                    style="@style/Settings.Label"
+                    android:text="@string/edit_account.fields.unit"/>
+
+                <ToggleButton
+                    android:id="@+id/edit_account_unit_toggle_button"
+                    style="@style/Settings.ToggleButton"
+                    android:background="@drawable/sel_toggle_unit_2"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

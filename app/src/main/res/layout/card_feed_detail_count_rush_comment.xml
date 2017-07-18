@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultraLightGraySecondary">
+
+        <Button
+            android:id="@+id/card_feed_detail_rush_count_button"
+            fontPath="fonts/EurostileBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/default_half_space"
+            android:drawableRight="@drawable/ic_sm_boost"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="@dimen/default_space"
+            android:paddingLeft="@dimen/default_space"
+            android:paddingTop="@dimen/default_space"
+            android:textColor="@color/gray"/>
+
+        <Button
+            android:id="@+id/card_feed_detail_comment_count_button"
+            fontPath="fonts/EurostileBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_space"
+            android:layout_toRightOf="@id/card_feed_detail_rush_count_button"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/default_half_space"
+            android:drawableRight="@drawable/ic_sm_comment_bubble"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="@dimen/default_space"
+            android:paddingRight="@dimen/default_space"
+            android:paddingTop="@dimen/default_space"
+            android:textColor="@color/gray"/>
+
+        <Button
+            android:id="@+id/card_feed_detail_rush_button"
+            fontPath="fonts/MontserratBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/card_feed_detail_comment_count_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/card_feed_detail_comment_count_button"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/default_space"
+            android:drawableRight="@drawable/sel_btn_rush"
+            android:gravity="center_vertical"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingRight="@dimen/default_space"
+            android:text="@string/footer_feed.actions.rush"
+            android:textAllCaps="true"
+            android:textColor="@color/sel_btn_rush"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

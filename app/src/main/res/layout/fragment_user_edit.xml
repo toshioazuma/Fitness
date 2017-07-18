@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".user.edit.UserEditFragment"
+    tools:ignore="MissingPrefix"
+    tools:showIn="@layout/activity_user_edit">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/user_edit_cover_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_edit_cover_imageview"
+            android:layout_width="match_parent"
+            android:background="@color/lightGray"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_placeholder"
+            app:layout_heightPercent="32%"/>
+
+        <View
+            android:id="@+id/user_edit_dark_overlay_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user_edit_cover_imageview"
+            android:layout_alignLeft="@id/user_edit_cover_imageview"
+            android:layout_alignParentTop="@id/user_edit_cover_imageview"
+            android:layout_alignRight="@id/user_edit_cover_imageview"
+            android:background="@drawable/sh_user_edit_cover_dark_gradients"/>
+
+        <LinearLayout
+            android:id="@+id/user_edit_cover_edit_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_edit_picture"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_half_space"
+                android:text="@string/user_edit.action.edit_cover_picture"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/user_edit_validate_button"
+            style="@style/RoundGreen.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action.validate"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_edit_avatar_layout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/user_edit_cover_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/user_edit_avatar_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_avatar_default"
+            app:civ_border_width="0dp"
+            app:civ_shadow_color="@color/black75"/>
+
+        <ImageButton
+            android:id="@+id/user_edit_avatar_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sh_round_blue75"
+            android:src="@drawable/ic_edit_picture"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_edit_avatar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_edit_username_input"
+                style="@style/EditUser.Input"
+                fontPath="fonts/MontserratBold.ttf"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableStart="@drawable/ic_setting_edit_account"
+                android:hint="@string/user_edit.hint.username"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/sample.username"/>
+
+            <EditText
+                android:id="@+id/user_edit_description_input"
+                style="@style/EditUser.Input"
+                fontPath="fonts/MontserratRegular.ttf"
+                android:drawableStart="@drawable/ic_setting_quote"
+                android:hint="@string/user_edit.hint.description"
+                android:text="@string/sample.description"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

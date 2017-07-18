@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item>@string/menu.items.home</item>
+        <item>@string/menu.items.my_profile</item>
+        <item>@string/menu.items.events</item>
+        <item>@string/menu.items.search</item>
+    </string-array>
+</resources>

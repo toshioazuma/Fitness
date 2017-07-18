@@ -1,0 +1,145 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.onrushers.app.feed.create.FeedCreateFragment"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/post_feed_actions_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sh_white_top_border">
+
+        <Button
+            android:id="@+id/post_feed_action_button"
+            style="@style/RoundGreen.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_space"
+            android:elevation="3dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/post_feed.actions.post"/>
+
+        <ImageButton
+            android:id="@+id/post_feed_user_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_space"
+            android:layout_toLeftOf="@id/post_feed_action_button"
+            android:background="@drawable/sh_round_light_gray"
+            android:elevation="3dp"
+            android:src="@drawable/ic_post_user_add"/>
+
+        <ImageButton
+            android:id="@+id/post_feed_place_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_space"
+            android:layout_toLeftOf="@id/post_feed_user_button"
+            android:background="@drawable/sh_round_light_gray"
+            android:elevation="3dp"
+            android:src="@drawable/ic_post_place"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/post_feed_actions_bar"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.onrushers.common.widgets.ORSquareImageView
+                android:id="@+id/post_feed_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_random_cover"/>
+
+            <RelativeLayout
+                android:id="@+id/post_feed_place_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/post_feed_place_secondary_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/default_double_space"
+                    android:background="@drawable/sh_round_blue"
+                    android:elevation="3dp"
+                    android:src="@drawable/ic_post_place"/>
+
+                <TextView
+                    android:id="@+id/post_feed_place_textview"
+                    fontPath="fonts/MontserratBold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_double_space"
+                    android:layout_toRightOf="@id/post_feed_place_secondary_button"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/post_feed_tagged_users_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingBottom="@dimen/default_space"
+                android:paddingLeft="@dimen/default_double_space"
+                android:paddingTop="@dimen/default_space"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/post_feed_tag_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_space"
+                    android:src="@drawable/ic_tag_outline"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/post_feed_tagged_users_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/post_feed_tag_imageview"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/post_feed_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/post_feed_actions_bar"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/default_space"
+                android:layout_marginRight="@dimen/default_space"
+                android:gravity="top|left"
+                android:hint="@string/post_feed.fields.text"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:singleLine="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

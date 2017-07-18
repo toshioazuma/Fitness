@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/events_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".event.home.EventsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_stub_header_primary"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/events_tabs"
+            style="@style/Events.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabs_height"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            app:tabBackground="@color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TabLayout.TabText"
+            app:tabTextColor="#99ffffff"/>
+
+        <com.onrushers.common.views.NonSwipeapleViewPager
+            android:id="@+id/events_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/events_tabs"
+            android:background="@color/white"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/events_search_result_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@color/ultraLightGray"
+            android:visibility="gone"
+            app:layoutManager="LinearLayoutManager"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

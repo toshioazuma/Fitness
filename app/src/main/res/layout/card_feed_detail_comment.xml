@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    card_view:contentPadding="@dimen/default_half_space">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingPrefix">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/card_feed_detail_comment_avatar_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/default_half_space"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_user_avatar_default"/>
+
+        <ImageButton
+            android:id="@+id/card_feed_detail_comment_option_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:minHeight="0dp"
+            android:paddingTop="@dimen/default_half_space"
+            android:src="@drawable/ic_more_vert_black"
+            android:tint="@color/lightGraySecondary"/>
+
+        <TextView
+            android:id="@+id/card_feed_detail_comment_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_feed_detail_comment_avatar_imageview"
+            android:layout_toLeftOf="@id/card_feed_detail_comment_option_button"
+            android:layout_toRightOf="@id/card_feed_detail_comment_avatar_imageview"
+            android:drawableLeft="@drawable/ic_sm_clock"
+            android:drawablePadding="@dimen/default_half_space"
+            android:paddingTop="@dimen/default_half_space"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/lightGray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/card_feed_detail_comment_user_textview"
+            fontPath="fonts/MontserratRegular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/card_feed_detail_comment_time_textview"
+            android:layout_alignRight="@id/card_feed_detail_comment_time_textview"
+            android:layout_below="@id/card_feed_detail_comment_time_textview"
+            android:layout_marginTop="@dimen/default_half_space"
+            android:text="@string/sample.username"
+            android:textColor="@color/blueSecondary"/>
+
+        <TextView
+            android:id="@+id/card_feed_detail_comment_text_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/card_feed_detail_comment_time_textview"
+            android:layout_alignRight="@id/card_feed_detail_comment_time_textview"
+            android:layout_below="@id/card_feed_detail_comment_user_textview"
+            android:layout_marginTop="@dimen/default_half_space"
+            android:text="@string/sample.description"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/card_feed_detail_comment_time_textview"
+            android:layout_alignRight="@id/card_feed_detail_comment_time_textview"
+            android:layout_below="@id/card_feed_detail_comment_text_textview"
+            android:layout_marginTop="@dimen/default_space"
+            android:background="@color/ultraLightGray"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
